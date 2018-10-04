@@ -7,7 +7,6 @@ import planes from "./planes.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.pups to the cards json array
   state = {
     planes,
     clickedPlaneIds: [],
@@ -25,7 +24,9 @@ class App extends Component {
     if(clickedPlaneIds.includes(id)){
       this.setState({ clickedPlaneIds: [], score: 0, status:  "No plane ride for you! You lost!  Click any plane for a new game." });
       return;
+
     }else{
+
       clickedPlaneIds.push(id)
 
       if(clickedPlaneIds.length === 8){
@@ -34,20 +35,12 @@ class App extends Component {
       }
 
       this.setState({ planes, clickedPlaneIds, score: clickedPlaneIds.length, status: " " });
-
       planes.sort(function(){
         return 0.5 - Math.random()
     })
     }
   }
 
-  
-
-
-
-
-
-  // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
       <div className="App">
