@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-color: #234b9c;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+
 }
 
 .App-logo {
@@ -8,25 +14,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0e234d;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 35px;
+  color: rgb(204, 204, 232);
+  border-bottom: 1px solid white;
 }
 
+.App-intro {
+
+font-size: 20px;
+color: rgb(204, 204, 232);
+
+}
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
