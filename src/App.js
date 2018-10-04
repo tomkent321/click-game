@@ -23,14 +23,13 @@ class App extends Component {
     let clickedPlaneIds = this.state.clickedPlaneIds;
 
     if(clickedPlaneIds.includes(id)){
-      this.setState({ clickedPlaneIds: [], score: 0, status:  "No plane ride for you! You lost!" });
+      this.setState({ clickedPlaneIds: [], score: 0, status:  "No plane ride for you! You lost!  Click any plane for a new game." });
       return;
     }else{
       clickedPlaneIds.push(id)
 
       if(clickedPlaneIds.length === 8){
-        this.setState({score: 8, status: "You win a free ticket!", clickedPlaneIds: []});
-        console.log('You Win');
+        this.setState({score: 8, status: "You win a free ticket! Click any plane for a new game.", clickedPlaneIds: []});
         return;
       }
 
@@ -39,8 +38,6 @@ class App extends Component {
       planes.sort(function(){
         return 0.5 - Math.random()
     })
-
-
     }
   }
 
