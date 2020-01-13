@@ -22,7 +22,7 @@ class App extends Component {
     let clickedPlaneIds = this.state.clickedPlaneIds;
 
     if(clickedPlaneIds.includes(id)){
-      this.setState({ clickedPlaneIds: [], score: 0, status:  "No plane ride for you! You lost!  Click any plane for a new game." });
+      this.setState({ clickedPlaneIds: [], score: 0, status:  "Alread clicked! No plane ride for you!  Click any plane for a new game." });
       return;
 
     }else{
@@ -64,10 +64,10 @@ class App extends Component {
             />
           ))}
         </Container>
-        <footer>
+        {/* <footer>
           <p></p>
           
-        </footer>
+        </footer> */}
     </div>
     );
   }

@@ -3,9 +3,10 @@ import "./Card.css";
 
 
 const Card = props => (
-  <div className="card img-container">
+ 
+  <div >
       <img alt={props.name} src={props.image} id={props.id}
-        onClick={() => props.movePlanes(props.id)} className='shuffleScore'/>
+        onClick={() => props.movePlanes(props.id)} className='responsive' />
   </div>
 );
 
