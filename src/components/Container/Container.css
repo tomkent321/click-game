@@ -1,19 +1,8 @@
-/* .container-fluid {
-  padding-top: 10px;
-  height: 100vh;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  overflow: auto;
-  
-  margin-right: auto;
-} */
-
 .container-fluid {
   height: 100vh;
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  
-  background: linear-gradient(#e1f8ffbf, #296d8a);
+
+  background: linear-gradient(#e1f8ffbf, #133c4d);
 }
