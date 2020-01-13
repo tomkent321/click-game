@@ -1,11 +1,10 @@
-  
-  .img-container {
-      margin-top: 10px;
-      border: 2px solid rgb(170, 170, 181);
-      box-shadow: 0 6px 6px rgb(116, 113, 113), 0 3px 6px rgb(50, 45, 45);
-      width: 340px;
-      /* height: 100px; */
+.img-container {
+  width: 350px;
+  height: 75px;
+  margin: 15px;
 
-      
-  }
-
+  /* height: 100px; */
+}
+.card {
+  background-color: rgba(162, 162, 175, 0);
+}
